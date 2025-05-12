@@ -1,0 +1,68 @@
+/* الترتيب العام للصفحة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* ترتيب العناصر بشكل عمودي */
+    justify-content: flex-start; /* جعل العناصر تبدأ من الأعلى */
+    align-items: center; /* توسيط العناصر أفقيًا */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+}
+
+.social-snap{
+ display: flex;
+    flex-wrap: nowrap; /* لا تسمح بلف الأيقونات إلى سطر جديد */
+    justify-content: center;
+    gap: 20px;   
+}
+
+/* تصميم قسم وسائل التواصل الاجتماعي */
+.social-media {
+    display: flex;
+    flex-direction: row; /* تغيير إلى row بدلاً من column */
+    align-items: center;
+    justify-content: center; /* لضمان أن العناصر في المنتصف */
+}
+
+/* تصميم أيقونات وسائل التواصل */
+.social-icons {
+    display: flex;
+    flex-wrap: nowrap; /* لا تسمح بلف الأيقونات إلى سطر جديد */
+    justify-content: center;
+    gap: 20px;
+}
+
+/* تخصيص الأيقونات */
+.social-icon {
+    display: inline-block;
+    text-align: center;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1); /* تكبير الأيقونات عند المرور عليها */
+}
+
+/* تخصيص اللوجو */
+.logo {
+    max-width: 200px; /* أقصى عرض للصورة */
+    max-height: 200px; /* أقصى ارتفاع للصورة */
+    width: auto; /* لضمان الحفاظ على النسبة */
+    height: auto; /* لضمان الحفاظ على النسبة */
+    margin-bottom: 20px; /* فاصل بين الصورة والأيقونات */
+    object-fit: contain;
+}
